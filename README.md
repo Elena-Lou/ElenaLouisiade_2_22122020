@@ -1,1 +1,1 @@
-# OCProjet2_reservia
+Projet 2 Reservia du parcours Developpeur Web d'OpenClassrooms
