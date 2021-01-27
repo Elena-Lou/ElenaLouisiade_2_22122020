@@ -1,0 +1,158 @@
+
+
+	#bloc_page {
+		width : auto;
+		margin: auto;
+	}
+
+	/** organisation du logo et des ancres **/ 
+	header .header {
+  		flex-wrap: wrap;
+	}
+
+	header .header img {
+  		order: 1;
+	}
+
+	header .header ul {
+  		order: 3;
+  		width: 100%;
+  		padding: 0%;
+ 	}
+
+	.header ul li {
+  		width: 100%;
+  		text-align: center;
+  		border-bottom: 3px solid grey;
+  		padding-bottom: 10px;
+	}
+
+/** changement au survol **/ 
+	.header ul li a:hover {
+		color: #0065FC;
+		border-bottom: 3px solid #0065FC;
+		padding-bottom: 10px;
+		border-top: none;
+	}
+
+	.header ul li:hover {
+  		width: 100%;
+  		text-align: center;
+  		border-bottom: 3px solid #0065FC;
+  		padding-bottom: 10px;
+  	}
+
+  	.header a {
+  		order: 2;
+  		flex-grow: 1;
+  		text-align: right;
+	}
+
+	.header a #signup:hover {
+		border: solid grey;
+	}
+
+/** disparition texte 'rechercher' **/
+	form label span {
+		display: none
+	}
+
+	.fas.fa-search {
+		display: inline;
+	}
+
+	.filters_list {
+		display: flex;
+		flex-wrap: wrap;
+		align-content: space-around;
+	}
+
+/** inversion des deux blocs accommodation **/
+	#accommodation {
+		display: flex;
+		flex-direction: column-reverse;
+		width: auto;
+		margin: auto;
+	}
+
+	#hotels {
+		width: auto;
+		margin: auto;
+		background-color: white;
+	}
+	
+/** presentation en colonne des hotels **/
+	.hotels_list {
+		display: flex;
+		flex-direction: column;
+		width: auto;
+		margin: auto;
+	}
+
+	#popular {
+		width: auto;
+		margin: auto;
+	}
+
+	.popular_hotels {
+		display: flex;
+		flex-direction: column;
+		width: auto;
+		margin: auto;
+	}
+
+	.popular_hotels img {
+		width: 40%;
+	}
+
+	/** presentation en colonne des activités **/
+	#activities {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.activities {
+		display: flex;
+		align-content: center;
+		width: auto;
+		height: auto;
+		
+	}
+
+	.activity {
+		display: grid;
+		grid-template-rows: 1fr 60px;
+		width: 100%;
+		margin: 5%;
+	}
+
+.activity:nth-child(1), .activity:nth-child(2), .activity:nth-child(3), .activity:nth-child(4), .activity:nth-child(5), .activity:nth-child(6)  {
+	height: 150px;
+}
+
+#activities {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.activities img {
+	width: 100%;
+	height: 100%;
+	border-radius: 24px 24px 0px 0px;
+	box-sizing: border-box;
+	object-fit: cover;
+}
+	
+/** presentation en colonne des éléments du footer **/
+	footer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: auto;
+		margin: auto;
+	}
+
+	footer ul, footer li {
+		width: auto;
+		margin: auto;
+	}
