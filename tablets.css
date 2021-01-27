@@ -68,6 +68,19 @@ form label span {
 	justify-content: space-around;
 }
 
+#accommodation {
+		display: flex;
+		flex-direction: column-reverse;
+		width: auto;
+		margin: auto;
+}
+
+#hotels {
+		width: auto;
+		margin: auto;
+}
+
+
 .hotels_list {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -76,15 +89,16 @@ form label span {
 	height: 100%;
 	grid-row-gap: 20px;
 	grid-column-gap: 20px;
-	font-size: 0.8em;
 }
+
+#popular {
+		width: auto;
+		margin: auto;
+		margin-bottom: 5%;
+	}
 
 .popular_hotels img {
 	width: 40%;
-}
-
-.popular_hotels {
-	font-size: 0.8em;
 }
 
 .activities {
