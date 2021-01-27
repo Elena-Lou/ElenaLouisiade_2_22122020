@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #bloc_page {
 	width : auto;
 	margin: auto;
@@ -67,6 +68,9 @@ form label span {
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
+=======
+
+>>>>>>> css
 
 
 .hotels_list {
@@ -77,6 +81,7 @@ form label span {
 	height: 100%;
 	grid-row-gap: 20px;
 	grid-column-gap: 20px;
+<<<<<<< HEAD
 	font-size: 0.8em;
 }
 

@@ -73,6 +73,10 @@ ul {
 	justify-content: space-around;
 	align-items: flex-start;
 	width: 30%;
+<<<<<<< HEAD
+=======
+	box-sizing: border-box;
+>>>>>>> css
 	margin-right: 2%;
 }
 
@@ -81,9 +85,12 @@ ul {
 		border-top: solid thin #0065FC;
 		padding-top: 10px;
 }
+<<<<<<< HEAD
 .header ul li {
 	padding-right: 15px;
 }
+=======
+>>>>>>> css
 
 .header a {
 	text-decoration: none;
@@ -97,8 +104,14 @@ ul {
 
 .fa-map-marker-alt {
 	background-color: #f2f2f2;
+<<<<<<< HEAD
 	border-radius: 6px 0px 0px 6px;
 	padding: 1%;
+=======
+	border: solid #f2f2f2;
+	border-radius: 6px 0px 0px 6px;
+	padding: 0.5%;
+>>>>>>> css
 }
 
 input {
@@ -107,6 +120,10 @@ input {
 
 form input {
 	border-color: #f2f2f2;
+<<<<<<< HEAD
+=======
+	border-width: 0.2%;
+>>>>>>> css
 	color: black;
 	font-weight: bold;
 }
@@ -115,7 +132,13 @@ form label {
 	color: white;
 	background-color: #0065FC;
 	border-radius: 0px 6px 6px 0px;
+<<<<<<< HEAD
 	padding: 1%;
+=======
+	align-self: center;
+	padding: 0.5%;
+	border: solid #0065FC;
+>>>>>>> css
 }
 
 .fas.fa-search {
@@ -135,7 +158,11 @@ form label {
 .filters_list {
 	display: flex;
 	justify-content: space-between;
+<<<<<<< HEAD
 	width : 75%;
+=======
+	width : 70%;
+>>>>>>> css
 }
 
 div.filter, .filter p {
@@ -151,8 +178,12 @@ div.filter {
 	border-top: solid thin #f2f2f2;
 	border-right: solid thin #f2f2f2;
 	border-radius: 50px;
+<<<<<<< HEAD
 	padding-right: 8px;
 	margin: 10px;
+=======
+	padding-right: 1%;
+>>>>>>> css
 }
 
 .filter p {
@@ -188,7 +219,11 @@ i.fa-info {
 
 }
 
+<<<<<<< HEAD
 .fa-chart-line, .fa-map-marker-alt {
+=======
+.fa-chart-line, .fa-map-marker-alt, {
+>>>>>>> css
 	color: black;
 }
 
@@ -202,6 +237,10 @@ i.fa-info {
 
 #accommodation {
  	display: flex;
+<<<<<<< HEAD
+=======
+ 	flex-direction: row;
+>>>>>>> css
  	justify-content: space-around; 
  	width: 100%;
  	}
@@ -227,6 +266,7 @@ i.fa-info {
 	width: 100%;
 	height: 100%;
 	box-sizing: border-box;
+<<<<<<< HEAD
 	max-height: 330px; 
 	margin: 0px;
 }
@@ -239,6 +279,12 @@ i.fa-info {
 	margin: 0%;
 } */
 
+=======
+	max-height: 300px; 
+	margin: 0px;
+}
+
+>>>>>>> css
 .hotels_list img {
 	width: 100%;
 	height: 60%;
@@ -262,7 +308,11 @@ i.fa-info {
 }
 
 #hotels h2 {
+<<<<<<< HEAD
 	margin-bottom: 2%;
+=======
+	margin-bottom: : 2%;
+>>>>>>> css
 	padding: 0px;
 }
 
@@ -328,7 +378,11 @@ figcaption h3, p {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
+<<<<<<< HEAD
 	justify-content: space-between;  
+=======
+	justify-content: space-between;
+>>>>>>> css
 	width: 100%;
 	height: 500px;
 	}
