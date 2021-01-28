@@ -3,7 +3,7 @@
 	margin: auto;
 }
 
-	/** organisation du logo et des ancres **/ 
+	/* organisation du logo et des ancres */ 
 header .header {
   	display: flex;
   	align-items: center;
@@ -19,7 +19,7 @@ header .header ul {
   	display: flex;
   	width: 100%;
   	padding: 0%;
- }
+}
 
 .header ul li {
   	width: 100%;
@@ -27,8 +27,7 @@ header .header ul {
   	border-bottom: 3px solid grey;
   	padding-bottom: 10px;
 }
-
-/** changement au survol **/ 
+/* changement au survol */ 
 .header ul li a:hover {
 	color: #0065FC;
 	border-bottom: 3px solid #0065FC;
@@ -41,9 +40,9 @@ header .header ul {
   	text-align: center;
   	border-bottom: 3px solid #0065FC;
   	padding-bottom: 10px;
-  }
+}
 
- .header a {
+.header a {
   	order: 2;
   	flex-grow: 1;
   	text-align: right;
@@ -53,11 +52,11 @@ header .header ul {
 	border: solid grey;
 }
 
-/** disparition texte 'rechercher' **/
+/* disparition texte 'rechercher' */
 form label span {
 	display: none
 }
-
+/* apparition de l'icone loupe */
 .fas.fa-search {
 	display: inline;
 }
@@ -67,20 +66,19 @@ form label span {
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
-
+/* inversion des deux sections accommodation */
 #accommodation {
-		display: flex;
-		flex-direction: column-reverse;
-		width: auto;
-		margin: auto;
+	display: flex;
+	flex-direction: column-reverse;
+	width: auto;
+	margin: auto;
 }
 
 #hotels {
-		width: auto;
-		margin: auto;
+	width: auto;
+	margin: auto;
 }
-
-
+/* modification présentation des hôtels */
 .hotels_list {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -90,17 +88,17 @@ form label span {
 	grid-row-gap: 20px;
 	grid-column-gap: 20px;
 }
-
+/* presentation des hôtels populaires sur toute la largeur */
 #popular {
-		width: auto;
-		margin: auto;
-		margin-bottom: 5%;
-	}
-
-.popular_hotels img {
-	width: 40%;
+	width: auto;
+	margin: auto;
+	margin-bottom: 5%;
 }
 
+.popular_hotels img {
+	width: 50%;
+}
+/* modification présentation des activités */
 .activities {
 	display: flex;
 	flex-direction: column;
@@ -118,32 +116,11 @@ form label span {
 	margin: 0%;
 }
 
-.activity:nth-child(1) {
-	height: 45%;
-
-}
-
-.activity:nth-child(2) {
+.activity:nth-child(1), .activity:nth-child(2), .activity:nth-child(3), .activity:nth-child(4), .activity:nth-child(5), .activity:nth-child(6) {
 	height: 45%;
 }
 
-.activity:nth-child(3) {
-	height: 45%;
-}
-
-.activity:nth-child(4) {
-	height: 45%;	
-}
-
-.activity:nth-child(5) {
-	height: 45%;
-}
-
-.activity:nth-child(6) {
-	height: 45%;
-}
-
-/** presentation en colonne des éléments du footer **/
+/* presentation en colonne des éléments du footer */
 footer {
 	display: flex;
 	flex-direction: column;
@@ -154,4 +131,3 @@ footer ul, footer li {
 	width: auto;
 	margin: auto;
 }
-

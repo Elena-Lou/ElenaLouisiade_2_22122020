@@ -6,12 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css" /> <!-- pour tous les écrans -->
 
-         <link rel="stylesheet" media="screen and (max-width: 425px)" href="petites_resolutions.css" type="text/css" />
-         <link rel="stylesheet" media="screen and (min-width: 426px) and (max-width: 900px)" href="tablets.css" type="text/css" />
+         <link rel="stylesheet" media="screen and (max-width: 425px)" href="petites_resolutions.css" type="text/css" /> <!-- pour les portables -->
 
-        <link rel="stylesheet" media="screen and (max-width: 425px)" href="petites_resolutions.css" type="text/css" />
-        <!-- <link rel="stylesheet" media="screen and (max-width: 768px)" href="tablets.css" type="text/css" /> -->
-
+         <link rel="stylesheet" media="screen and (min-width: 426px) and (max-width: 900px)" href="tablets.css" type="text/css" /> <!-- pour les tablettes -->
 
         <script src="https://kit.fontawesome.com/7798f2e0f1.js" crossorigin="anonymous"></script>
         <title>Reservia</title>
@@ -34,7 +31,7 @@
                 </div>
             </header>
 
-            <section id="filters">
+            <section id="filters"> <!-- filtres -->
                 <h1>Trouvez votre hébergement pour vos vacances de rêves</h1>
                 <p>En plein centre ville ou en pleine nature</p>
                 <form method="post" action="#">
@@ -71,7 +68,7 @@
 
             <section id="accommodation">
                 <!-- grande section pour les hébergements, divisée en deux avec flexbox -->
-                <div id="hotels"> <!-- première sous partie -->
+                <div id="hotels"> <!-- première sous partie hôtels -->
                     <h2>Hébergements à Marseille</h2>
                     <div class="hotels_list">          
                         <figure class="hotel"><img src="images/auberge_cannebiere_mini.jpg" alt="Auberge de la Cannebière"/>
@@ -126,7 +123,7 @@
 
                 </div>
 
-                <div id="popular"> <!-- deuxième sous partie -->
+                <div id="popular"> <!-- deuxième sous partie hôtels populaires -->
                     <div class="popular_title"><h2>Les plus populaires</h2><i class="fas fa-chart-line fa-lg"></i>
                     </div>
                     <div class="popular_hotels">
@@ -158,7 +155,7 @@
                         </section>
 
 
-                        <section id="activities"> 
+                        <section id="activities"> <!-- activités -->
                             <h2>Activités</h2>
                             <div class="activities">
                                 <figure class="activity"><img src="images/vieux_port_mini.jpg" alt="Vieux Port"/>
@@ -199,7 +196,7 @@
                             </div>
                         </section>
 
-                        <footer>   
+                        <footer>   <!-- pied de page -->
                             <div>
                                 <h2>A propos</h2>
                                 <ul>

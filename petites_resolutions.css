@@ -1,134 +1,131 @@
+#bloc_page {
+	width : auto;
+	margin: auto;
+}
 
+/* organisation du logo et des ancres */ 
+header .header {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
 
-	#bloc_page {
-		width : auto;
-		margin: auto;
-	}
+header .header img {
+	order: 1;
+}
 
-	/** organisation du logo et des ancres **/ 
-	header .header {
-  		display: flex;
-  		align-items: center;
-  		flex-wrap: wrap;
-	}
+header .header ul {
+	order: 3;
+	display: flex;
+	width: 100%;
+	padding: 0%;
+}
 
-	header .header img {
-  		order: 1;
-	}
+.header ul li {
+	width: 100%;
+	text-align: center;
+	border-bottom: 3px solid grey;
+	padding-bottom: 10px;
+}
 
-	header .header ul {
-  		order: 3;
-  		display: flex;
-  		width: 100%;
-  		padding: 0%;
- 	}
+/* changement au survol */ 
+.header ul li a:hover {
+	color: #0065FC;
+	border-bottom: 3px solid #0065FC;
+	padding-bottom: 10px;
+	border-top: none;
+}
 
-	.header ul li {
-  		width: 100%;
-  		text-align: center;
-  		border-bottom: 3px solid grey;
-  		padding-bottom: 10px;
-	}
+.header ul li:hover {
+	width: 100%;
+	text-align: center;
+	border-bottom: 3px solid #0065FC;
+	padding-bottom: 10px;
+}
 
-/** changement au survol **/ 
-	.header ul li a:hover {
-		color: #0065FC;
-		border-bottom: 3px solid #0065FC;
-		padding-bottom: 10px;
-		border-top: none;
-	}
+.header a {
+	order: 2;
+	flex-grow: 1;
+	text-align: right;
+}
 
-	.header ul li:hover {
-  		width: 100%;
-  		text-align: center;
-  		border-bottom: 3px solid #0065FC;
-  		padding-bottom: 10px;
-  	}
+.header a #signup:hover {
+	border: solid grey;
+}
 
-  	.header a {
-  		order: 2;
-  		flex-grow: 1;
-  		text-align: right;
-	}
+/* disparition texte 'rechercher' */
+form label span {
+	display: none
+}
+/* apparition de l'icone loupe */
+.fas.fa-search {
+	display: inline;
+}
 
-	.header a #signup:hover {
-		border: solid grey;
-	}
+.filters_list {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+	justify-content: space-between;
+}
 
-/** disparition texte 'rechercher' **/
-	form label span {
-		display: none
-	}
+/* inversion des deux sections accommodation */
+#accommodation {
+	display: flex;
+	flex-direction: column-reverse;
+	width: auto;
+	margin: auto;
+}
 
-	.fas.fa-search {
-		display: inline;
-	}
+#hotels {
+	width: auto;
+	margin: auto;
+	background-color: white;
+}
 
-	.filters_list {
-		display: flex;
-		flex-wrap: wrap;
-		align-content: space-around;
-		justify-content: space-between;
-	}
+/* presentation en colonne des hotels */
+.hotels_list {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	margin: auto;
+}
+/* presentation des hotels populaires sur toute la largeur */
+#popular {
+	width: auto;
+	margin: auto;
+}
 
-/** inversion des deux blocs accommodation **/
-	#accommodation {
-		display: flex;
-		flex-direction: column-reverse;
-		width: auto;
-		margin: auto;
-	}
+.popular_hotels {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	margin: auto;
+}
 
-	#hotels {
-		width: auto;
-		margin: auto;
-		background-color: white;
-	}
-	
-/** presentation en colonne des hotels **/
-	.hotels_list {
-		display: flex;
-		flex-direction: column;
-		width: auto;
-		margin: auto;
-	}
+.popular_hotels img {
+	width: 40%;
+}
 
-	#popular {
-		width: auto;
-		margin: auto;
-	}
+/* presentation en colonne des activités */
+#activities {
+	display: flex;
+	flex-direction: column;
+}
 
-	.popular_hotels {
-		display: flex;
-		flex-direction: column;
-		width: auto;
-		margin: auto;
-	}
+.activities {
+	display: flex;
+	align-content: center;
+	width: auto;
+	height: auto;
+}
 
-	.popular_hotels img {
-		width: 40%;
-	}
-
-	/** presentation en colonne des activités **/
-	#activities {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.activities {
-		display: flex;
-		align-content: center;
-		width: auto;
-		height: auto;
-		
-	}
-
-	.activity {
-		display: grid;
-		grid-template-rows: 1fr 60px;
-		width: 100%;
-		margin: 5%;
-	}
+.activity {
+	display: grid;
+	grid-template-rows: 1fr 60px;
+	width: 100%;
+	margin: 5%;
+}
 
 .activity:nth-child(1), .activity:nth-child(2), .activity:nth-child(3), .activity:nth-child(4), .activity:nth-child(5), .activity:nth-child(6)  {
 	height: 150px;
@@ -146,17 +143,17 @@
 	box-sizing: border-box;
 	object-fit: cover;
 }
-	
-/** presentation en colonne des éléments du footer **/
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		width: auto;
-		margin: auto;
-	}
 
-	footer ul, footer li {
-		width: auto;
-		margin: auto;
-	}
+/* presentation en colonne des éléments du footer */
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: auto;
+	margin: auto;
+}
+
+footer ul, footer li {
+	width: auto;
+	margin: auto;
+}

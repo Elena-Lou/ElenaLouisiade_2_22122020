@@ -5,13 +5,13 @@
 }
 
 html {
-	font-family: Raleway-Regular;
+	font-family: Raleway-Regular, Arial, Verdana, Serif;
 }
 
 #bloc_page {
 	margin: 30px;
 }
-
+/* couleur de fond pour les blocs */
 footer, #popular, #hotels {
   	background-color: #f2f2f2;
   	border-radius: 12px;
@@ -29,12 +29,13 @@ h2 {
 	font-weight: bolder;
 }
 
-a:visited {
+/* pas de décoration pour les liens*/
+a {
 	color: black;
 	text-decoration: none;
 }
 
-a {
+a:visited {
 	color: black;
 	text-decoration: none;
 }
@@ -44,18 +45,23 @@ figure {
 	border-radius: 24px;
 	box-shadow: 4px 4px 6px grey; 
 }
-
+/*effet au survol pour toutes les figures */
 figure:hover {
 	background-color: white;
 	border-radius: 24px;
 	box-shadow: 12px 12px 6px grey inset; 
 }
 
+figcaption h3, p {
+	padding: 0%;
+	margin-top: 0%;
+}
 
 ul {
 	list-style: none;
 }
 
+/* emplacement du logo et des ancres */
 .header {
 	width: 100%;
 	display: flex;
@@ -65,7 +71,7 @@ ul {
 }
 
 .header #logo {
-	width : 70%;
+	width : 60%;
 	margin : 0px;
 }
 
@@ -76,11 +82,11 @@ ul {
 	width: 30%;
 	margin-right: 2%;
 }
-
+/*barre au survol */
 .header ul li a:hover  {
-		color: #0065FC;
-		border-top: solid thin #0065FC;
-		padding-top: 10px;
+	color: #0065FC;
+	border-top: solid thin #0065FC;
+	padding-top: 10px;
 }
 
 .header ul li {
@@ -119,7 +125,7 @@ form label {
 	border-radius: 0px 6px 6px 0px;
 	padding: 1%;
 }
-
+/* icone à apparaître dans résolutions inférieures */
 .fas.fa-search {
 	display: none;
 }
@@ -146,7 +152,7 @@ div.filter, .filter p {
 	margin-bottom: 0px;
 	font-weight: bold;
 }
-
+/* bordures des filtres */
 div.filter {
 	border-bottom: solid thin #f2f2f2;
 	border-top: solid thin #f2f2f2;
@@ -159,7 +165,7 @@ div.filter {
 .filter p {
 	padding-left: 3px;
 }
-
+/* présentation des icones */
 .icon {
 	background-color: #DEEBFF;
 	opacity: 1;
@@ -182,13 +188,12 @@ i.fa-info {
     text-align: center;
     vertical-align: middle;
 }
-
+/* modification apparence au survol */
 .filter:hover {
 	cursor: pointer;
 	background-color: #DEEBFF;
-
 }
-
+/* couleur des icones */
 .fa-chart-line, .fa-map-marker-alt {
 	color: black;
 }
@@ -196,16 +201,16 @@ i.fa-info {
 .fa-star, .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog, .fa-info {
 	color:#0065FC;
 }
-
+/* étoiles grisées sous les hôtels */
 #s1, #s2, #s3, #s4,#s5, #s6, #s7 {
  	color: #f2f2f2;
  }
-
+/* division de la sections hébergements en deux parties */
 #accommodation {
  	display: flex;
  	justify-content: space-around; 
  	width: 100%;
- 	}
+ }
 
 #hotels { 
 	display: grid;
@@ -213,7 +218,7 @@ i.fa-info {
 	margin-right: 4%;
 	padding: 2%;
 }
-
+/* organisation du bloc hôtels */
 .hotels_list {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -223,22 +228,14 @@ i.fa-info {
 	grid-row-gap: 20px;
 	grid-column-gap: 20px;
 }
-
+/* apparence des figures des hôtels */
 .hotels_list figure { 
 	width: 100%;
 	height: 100%;
 	box-sizing: border-box;
 	max-height: 330px; 
 	margin: 0px;
-}
-
-/* .hotel_list figure {
-	width: 100%;
-	display: grid;
-	grid-template-rows: 200px 100px;
-	box-sizing: border-box;
-	margin: 0%;
-} */
+} 
 
 .hotels_list img {
 	width: 100%;
@@ -254,7 +251,7 @@ i.fa-info {
 	width: 100%;
 	height: auto;
 	padding: 2%;
-	}
+}
 
 #hotels a {
 	padding: 3%;
@@ -272,7 +269,7 @@ i.fa-info {
 	display: grid;
 	padding: 1.5%;
 }
-
+/* oragnisation titre et icone */
 .popular_title {
 	display: flex;
 	flex-direction: row;
@@ -282,8 +279,7 @@ i.fa-info {
 	width: 100%;
 	padding: 2%;
 }
-
-
+/* organisation du bloc populaires*/
 .popular_hotels {
 	display: grid;
 	grid-template-rows: 1fr 1fr 1fr;
@@ -291,7 +287,7 @@ i.fa-info {
 	height : 100%;
 	grid-row-gap: 30px;
 }
-
+/* organisation des figures */
 .popular_hotels figure {
 	display: flex;
 	flex-direction: row;
@@ -317,12 +313,7 @@ i.fa-info {
 	flex-direction: column;
 	justify-content: space-between;
 }
-
-figcaption h3, p {
-	padding: 0%;
-	margin-top: 0%;
-}
-
+/* organisation de la section activités */
 .activities {
 	display: flex;
 	flex-direction: column;
@@ -330,8 +321,8 @@ figcaption h3, p {
 	justify-content: space-between;  
 	width: 100%;
 	height: 500px;
-	}
-
+}
+/* organisation des figures */
 .activity {
 	display: grid;
 	grid-template-rows: 1fr 50px;
@@ -346,9 +337,8 @@ figcaption h3, p {
 	align-items: center; 
 }
 
-.activity:nth-child(1) {
+.activity:nth-child(1), .activity:nth-child(4) {
 	height: 100%;
-
 }
 
 .activity:nth-child(2) {
@@ -359,15 +349,7 @@ figcaption h3, p {
 	height: 40%;
 }
 
-.activity:nth-child(4) {
-	height: 100%;	
-}
-
-.activity:nth-child(5) {
-	height: 45%;
-}
-
-.activity:nth-child(6) {
+.activity:nth-child(5), .activity:nth-child(6) {
 	height: 45%;
 }
 
@@ -383,8 +365,8 @@ figcaption h3, p {
 	box-sizing: border-box;
 	object-fit: cover;
 	grid-row: 1/3;
-   }
-
+}
+/* oragnaisation du pied de page */
 footer {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -397,6 +379,7 @@ footer {
 footer li {
 	padding-top: 2%;
 }
+
 footer ul, footer h2 {
 	padding: 0%;
 }
