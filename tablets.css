@@ -5,8 +5,6 @@
 
 	/* organisation du logo et des ancres */ 
 header .header {
-  	display: flex;
-  	align-items: center;
   	flex-wrap: wrap;
 }
 
@@ -16,7 +14,6 @@ header .header img {
 
 header .header ul {
   	order: 3;
-  	display: flex;
   	width: 100%;
   	padding: 0%;
 }
@@ -61,14 +58,8 @@ form label span {
 	display: inline;
 }
 
-.filters_list {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
 /* inversion des deux sections accommodation */
 #accommodation {
-	display: flex;
 	flex-direction: column-reverse;
 	width: auto;
 	margin: auto;

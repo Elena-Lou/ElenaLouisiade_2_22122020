@@ -43,7 +43,7 @@ a:visited {
 figure {
 	background-color: white;
 	border-radius: 24px;
-	box-shadow: 4px 4px 6px grey; 
+	box-shadow: 4px 4px 6px grey;
 }
 /*effet au survol pour toutes les figures */
 figure:hover {
@@ -142,6 +142,8 @@ form label {
 }
 .filters_list {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	width : 75%;
 }
 
