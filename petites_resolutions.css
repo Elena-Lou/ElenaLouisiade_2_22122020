@@ -1,23 +1,19 @@
-#bloc_page {
-	margin: auto;
-}
-
 /* organisation du logo et des ancres */ 
-.header {
+nav {
 	flex-wrap: wrap;
 }
 
-.header img {
+nav img {
 	order: 1;
 }
 
-.header ul {
+nav ul {
 	order: 3;
 	width: 100%;
 	padding: 0%;
 }
 
-.header ul li {
+nav ul li {
 	width: 100%;
 	text-align: center;
 	border-bottom: 3px solid #f2f2f2;
@@ -25,20 +21,20 @@
 }
 
 /* changement au survol */ 
-.header ul li a:hover {
+nav ul li a:hover {
 	border-bottom: 3px solid #0065FC;
 	padding-bottom: 10px;
 	border-top: none;
 }
 
-.header ul li:hover {
+nav ul li:hover {
 	width: 100%;
 	text-align: center;
 	border-bottom: 3px solid #0065FC;
 	padding-bottom: 10px;
 }
 
-.header a {
+nav a {
 	order: 2;
 	flex-grow: 1;
 	text-align: right;
@@ -108,7 +104,7 @@ form label span {
 }
 
 /* presentation en colonne des éléments du footer */
-footer {
+footer .bloc_page {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
