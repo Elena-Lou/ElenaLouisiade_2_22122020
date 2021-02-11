@@ -93,6 +93,7 @@ footer .bloc_page {
 	display: flex;
 	flex-direction: column;
 	width: auto;
+	padding: 2%;
 }
 
 footer ul, footer li {
